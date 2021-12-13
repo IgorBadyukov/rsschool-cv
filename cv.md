@@ -1,8 +1,8 @@
-#Igor Badyukov
+# Igor Badyukov
 
 *******************************************
 
-##Beginner Frontend Developer
+## Beginner Frontend Developer
 
 *******************************************
 
@@ -34,7 +34,7 @@ at IT-company and I hope RS-School will help me with this)
 * Hard
     + HTML5
     + CSS3/SASS
-    + JavaScript(Fundamentals, DOM, JSON, Jqery)
+    + JavaScript(Fundamentals, DOM, JSON, Jquery)
     + Git
     + Figma
     + C++/C
@@ -54,6 +54,49 @@ at IT-company and I hope RS-School will help me with this)
 *******************************************
 
 Makeup of free Figma layouts, Game-Cities, TODO-list
+
+******************************************
+
+### Code
+
+******************************************
+You are given a string containing a sequence of character sequences separated by commas.
+
+Write a function which returns a new string containing the same character sequences except the first and the last ones but this time separated by spaces.
+
+If the input string is empty or the removal of the first and last items would cause the resulting string to be empty, return an empty value (represented as a generic value NULL in the examples below).
+
+```
+function array(arr) {
+let newArr = arr.split(',');
+  if (newArr.length<3) {
+    return null;
+    }
+  let str = newArr.slice(1,-1).join(' ');
+  return str;
+}
+```
+
+*****************************************
+
+### Education 
+
+*****************************************
+
+* 2nd year of university
+* WayUp free course JavaScript
+* Stepik free course JavaScript
+* Itensiv GloAcademy
+
+****************************************
+
+### Language
+
+* Russian, Belarusian (national)
+* English (B1 - university testing, A2 - EPAM testing)
+
+
+
 
 
 
