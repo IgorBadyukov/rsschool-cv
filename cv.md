@@ -56,7 +56,6 @@ at IT-company and I hope RS-School will help me with this)
 Makeup of free Figma layouts, Game-Cities, TODO-list
 
 ******************************************
-
 ### Code
 
 ******************************************
@@ -66,16 +65,14 @@ Write a function which returns a new string containing the same character sequen
 
 If the input string is empty or the removal of the first and last items would cause the resulting string to be empty, return an empty value (represented as a generic value NULL in the examples below).
 
-```
-function array(arr) {
+`function array(arr) {
 let newArr = arr.split(',');
-  if (newArr.length<3) {
+  if (newArr.length < 3) {
     return null;
     }
   let str = newArr.slice(1,-1).join(' ');
   return str;
-}
-```
+}`
 
 *****************************************
 
@@ -92,8 +89,10 @@ let newArr = arr.split(',');
 
 ### Language
 
+****************************************
+
 * Russian, Belarusian (national)
-* English (B1 - university testing, A2 - EPAM testing)
+* English (B1 - university test, A2 - EPAM testing)
 
 
 
