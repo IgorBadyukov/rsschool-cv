@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    display: block;
+    background-color: #C4C4C4;
+    width: 100%;
+    height: 6px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.header__profession {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 16px;
+}
+
+.header__title {
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 57px;
+    color: #222222;
+}
+
+.header__description {
+    background-color: #2AA5A0;
+    background-image: linear-gradient(90deg, #E3535D, #2AA5A0);
+    height: 20px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header__image {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.header__photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.header__description {
+    font-size: 20px;
+    line-height: 13px;
+    color: #222222;
+}
+
+.header__contacts-list {
+    list-style: none;
+    padding: 0;
+}
+
+.header__cotntacts-item {
+    display: flex;
+    align-items: center;
+}
+
+.header__contacts-link {
+    text-decoration: none;
+    font-style: normal;
+}
+
+.header__contacts-img {
+    width: 30px;
+    height: 30px;
+}
