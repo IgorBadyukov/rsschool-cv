@@ -43,9 +43,15 @@ body {
 }
 
 .header__profession {
-    font-weight: bold;
-    font-size: 20px;
+    background-color: #2AA5A0;
+    background-image: linear-gradient(90deg, #E3535D, #2AA5A0);
+    height: 20px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 24px;
     line-height: 16px;
+    padding-left: 20px;
 }
 
 .header__title {
@@ -53,14 +59,10 @@ body {
     font-size: 44px;
     line-height: 57px;
     color: #222222;
-}
-
-.header__description {
-    background-color: #2AA5A0;
-    background-image: linear-gradient(90deg, #E3535D, #2AA5A0);
-    height: 20px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    margin: 0;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    text-shadow: #C4C4C4 2px 2px 2px;
 }
 
 
@@ -74,20 +76,28 @@ body {
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px rgb(240, 196, 209) solid; 
+    border: 2px rgb(199, 145, 201) solid;
 }
 
 .header__description {
     font-size: 20px;
     line-height: 13px;
-    color: #222222;
+    color: #999999;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+    margin-top: 18px;
 }
 
-.header__contacts-title{
-   font-weight: normal;
-   font-size: 20px;
-   line-height: 13px;
-   color: #222222;
+.header__contacts-title {
+    background-color: #2AA5A0;
+    background-image: linear-gradient(90deg, #E3535D, #2AA5A0);
+    height: 35px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 16px;
 }
 
 .header__contacts-list {
@@ -95,7 +105,6 @@ body {
     padding: 0;
     display: flex;
     flex: wrap;
-    
 }
 
 .header__cotntacts-item {
@@ -107,17 +116,25 @@ body {
 .header__contacts-link {
     text-decoration: none;
     font-style: normal;
+    font-size: 17px;
+    color: #222222;
+    border-bottom: 1px solid transparent;
+    margin-left: 5px;
+}
+
+.header__contacts-link:hover {
+    border-bottom: 1px solid #222222;
 }
 
 .header__contacts-img {
     width: 30px;
     height: 30px;
+    fill: #222222;
 }
 
 .main {
     display: flex;
 }
-
 
 .main__section {
     width: 70%;
@@ -133,33 +150,165 @@ body {
 .title__about-me {
     background-color: #2AA5A0;
     background-image: linear-gradient(90deg, #E3535D, #2AA5A0);
-    height: 30px;
+    height: 40px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 35px;
+    margin: 0;
 }
 
-.title__skills{
+.info__about-me {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.title__skills {
     background-color: #2AA5A0;
     background-image: linear-gradient(90deg, #E3535D, #2AA5A0);
-    height: 30px;
+    height: 40px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;  
+    font-size: 35px;
+    margin: 0;
+    margin-bottom: 12px;
 }
 
-.title__education{
+.skills__type-name {
+    font-size: 22px;
+    color: rgb(175, 165, 165);
+    padding-left: 10px;
+}
+
+.skills__description {
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.title__education {
     background-color: #2AA5A0;
     background-image: linear-gradient(90deg, #E3535D, #2AA5A0);
-    height: 30px;
+    height: 40px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;  
+    font-size: 35px;
+    margin: 0;
 }
 
-.footer{
+.education__list {
+    padding-left: 15px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.education__item {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.education__item-add {
+    color: #999999;
+}
+
+.code__title {
+    background-color: #2AA5A0;
+    background-image: linear-gradient(90deg, #E3535D, #2AA5A0);
+    height: 40px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    font-size: 35px;
+    margin: 0;
+}
+
+.code__desciption {
+    font-size: 16px;
+}
+
+.code__text {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.language__title {
+    background-color: #2AA5A0;
+    background-image: linear-gradient(90deg, #E3535D, #2AA5A0);
+    height: 45px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    font-size: 35px;
+    margin: 0;
+}
+
+.language__list {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+.language__item {
+    margin-bottom: 10px;
+}
+
+.projects__title {
+    background-color: #2AA5A0;
+    background-image: linear-gradient(90deg, #E3535D, #2AA5A0);
+    height: 45px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    font-size: 35px;
+    margin: 0;
+}
+
+.projects__list {
+    list-style: none;
+    padding: 0;
+}
+
+.projects__item {
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.projet__item-link {
+    display: flex;
+    align-items: center;
+}
+
+.project__link {
+    text-decoration: none;
+    color: #222222;
+    border-bottom: 1px solid transparent;
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.project__link:hover {
+    border-bottom: 1px solid #222222;
+}
+
+.project__img-link {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.project__decription {
+    color: #999999;
+    font-size: 15px;
+    margin: 0;
+}
+
+.footer {
     background-color: #fff;
     position: relative;
+    padding-top: 10px;
+    margin-top: 20px;
+    width: 100%;
+    height: 25vh;
 }
 
-.footer::after{
+.footer::before {
     content: '';
     position: absolute;
     top: 0;
@@ -171,7 +320,7 @@ body {
 
 .footer__container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 15px auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -188,7 +337,21 @@ body {
     font-size: 20px;
 }
 
-.footer__git{
+.footer__git {
     display: flex;
     align-items:center;
+    text-decoration: none;
 }
+
+.footer__git-name {
+    color: #222222;
+    font-size: 18px;
+    margin-left: 10px;
+    border-bottom: 1px solid transparent;
+}
+
+.footer__git-name:hover {
+    border-bottom: 1px solid #222222;
+}
+
+
