@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,20 +19,20 @@
             <h1 class="header__title">Igor Badyukov</h1>
             <span class="header__profession">Frontend developer</span>
             <p class="header__description">Student who dreams about career of IT</p>
-            <span class="header__contacts-title">Contacts:</span>
+            <h2 class="header__contacts-title">Contacts:</h2>
             <address class="header__contacts">
                 <ul class="header__contacts-list">
                     <li class="header__cotntacts-item">
                         <img class="header__contacts-img" src="img/email.svg" alt="email">
-                        <a href="#" class="header__contacts-link">badyukov1806302003@gmail.com</a>
+                        <a href="mailto:badyukov1806302003@gamil.com" class="header__contacts-link">badyukov1806302003@gmail.com</a>
                     </li>
                     <li class="header__cotntacts-item">
                         <img class="header__contacts-img" src="img/linkedin.svg" alt="linkedin">
-                        <a href="#" class="header__contacts-link">Igor Badyukov</a>
+                        <a href="https://linkedin.com/in/igorbadyukov" class="header__contacts-link">Igor Badyukov</a>
                     </li>
                     <li class="header__cotntacts-item">
                         <img class="header__contacts-img" src="img/git.svg" alt="git">
-                        <a href="#" class="header__contacts-link">IgorBadyukov</a>
+                        <a href="https://github.com/IgorBadyukov" class="header__contacts-link">IgorBadyukov</a>
                     </li>
                 </ul>
             </address>
@@ -59,7 +60,8 @@
                     <ul class="education__list">
 
                         <li class="education__item">
-                            2nd year of university
+                            2nd year of university 
+                            <span class="education__item-add">(knowledge OOP, algorithms, technical English)</span>
                         </li>
                         <li class="education__item">
                             WayUp free course JavaScript
@@ -68,7 +70,7 @@
                             Stepik free course JavaScript
                         </li>
                         <li class="education__item">
-                            Itensiv GloAcademy
+                            Itensiv GloAcademy <span class="education__item-add">(several pet-project)</span>
                         </li>
                     </ul>
             </div>
@@ -83,19 +85,20 @@
 
                     If the input string is empty or the removal of the first and last items would cause the resulting
                     string to be empty, return an empty value (represented as a generic value NULL in the examples
-                    below).You are given a string containing a sequence of character sequences separated by commas.<br> <br>
+                    below).You are given a string containing a sequence of character sequences separated by commas.<br>
+                    <br>
                 </p>
                 <div class="code__solve">
-                    <p class="code__text">
-                        function array(arr) { <br>
-                            let newArr = arr.split(','); <br>
-                              if (newArr.length < 3) { <br>
-                                return null; <br>
-                                } <br>
-                              let str = newArr.slice(1,-1).join(' '); <br>
-                            return str; <br>
-                        } <br>
-                    </p>
+                    <pre class="code__text">
+function array(arr) { 
+    let newArr = arr.split(',');
+    if (newArr.length < 3) {
+        return null;
+    }
+    let str = newArr.slice(1,-1).join(' ');
+    return str;
+}
+                    </pre>
                 </div>
             </div>
         </section>
@@ -103,17 +106,18 @@
         <article class="article">
             <div class="skills">
                 <h2 class="title__skills">Skills</h2>
-                <div class="skills__hard">
-                    <span class="skills__type">Hard</span>
-                    <p class="skills__hard-description"> HTML5 - CSS3/SASS - JavaScript(Fundamentals, DOM, JSON, Jquery) - Git - Figma - C++/C
+                <div class="skills__type">
+                    <span class="skills__type-name">Hard</span>
+                    <p class="skills__description"> HTML5 - CSS3/SASS - JavaScript(Fundamentals, DOM, JSON, Jquery) -
+                        Git - Figma - C++/C
                         -
                         Pluggins: Swiper.js, Parallax.js
                     </p>
                 </div>
-                <div class="skills__soft">
-                    <span class="skills__type">Soft</span>
-                    <p class="skills__soft-description">
-                    Communicabilty - Creativity - Flexibility - Discipline - Time-managment - Hard working 
+                <div class="skills__type">
+                    <span class="skills__type-name">Soft</span>
+                    <p class="skills__description">
+                        Communicabilty - Creativity - Flexibility - Discipline - Time-managment - Hard working
                     </p>
                 </div>
             </div>
@@ -130,16 +134,26 @@
                 <h2 class="projects__title">Projects</h2>
                 <ul class="projects__list">
                     <li class="projects__item">
-                        <a href="https://igorbadyukov.github.io/The-Witcher/" class="project__link">The Withcer</a>
-                        <img src="img/link.svg" alt="project__link" class="project__img-link">
+                        <div class="projet__item-link">
+                            <a href="https://igorbadyukov.github.io/The-Witcher/" class="project__link">The Withcer</a>
+                            <img src="img/link.svg" alt="project__link" class="project__img-link">
+                        </div>
+                        <span class="project__decription">HTML/CSS, JavaScript, Module, Adaptive layout, Grid, Tabs, JSON</span>
                     </li>
                     <li class="projects__item">
-                        <a href="https://igorbadyukov.github.io/Cinema_Infinity-War/" class="project__link">The Cinema Infinity War</a>
-                        <img src="img/link.svg" alt="project__link" class="project__img-link">
+                        <div class="projet__item-link">
+                            <a href="https://igorbadyukov.github.io/Cinema_Infinity-War/" class="project__link">The Cinema
+                                Infinity War</a>
+                            <img src="img/link.svg" alt="project__link" class="project__img-link">
+                        </div>
+                        <span class="project__decription">HTML/CSS, JavaScript, Adaptive layout, FlexBox</span>
                     </li>
                     <li class="projects__item">
-                        <a href="https://igorbadyukov.github.io/Index.Eda/" class="project__link">Index Eda</a>
-                        <img src="img/link.svg" alt="project__link" class="project__img-link">
+                        <div class="projet__item-link">
+                            <a href="https://igorbadyukov.github.io/Index.Eda/" class="project__link">Index Eda</a>
+                            <img src="img/link.svg" alt="project__link" class="project__img-link">
+                        </div>
+                        <span class="project__decription">HTML/CSS, Adaptive layout, Swiper.js</span>
                     </li>
                 </ul>
             </div>
@@ -152,7 +166,7 @@
                 <img src="img/rss.png" alt="rss" class="rsschool__image">
             </a>
             <span class="year">2021 RS-School</span>
-            <a href="" class="footer__git">
+            <a href="https://github.com/IgorBadyukov" class="footer__git">
                 <img src="img/git__footer.png" alt="git__footer">
                 <span class="footer__git-name">IgorBadyukov</span>
             </a>
