@@ -65,14 +65,16 @@ Write a function which returns a new string containing the same character sequen
 
 If the input string is empty or the removal of the first and last items would cause the resulting string to be empty, return an empty value (represented as a generic value NULL in the examples below).
 
-`function array(arr) {
+`
+function array(arr) {
 let newArr = arr.split(',');
   if (newArr.length < 3) {
     return null;
     }
   let str = newArr.slice(1,-1).join(' ');
   return str;
-}`
+}
+`
 
 *****************************************
 

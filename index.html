@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Igor Badyukov CV</title>
+</head>
+
+<body>
+    <header class="header container">
+        <div class="header__info">
+            <h1 class="header__title">Igor Badyukov</h1>
+            <span class="header__profession">Frontend developer</span>
+            <p class="header__description">Student who dreams about career of IT</p>
+            <h2 class="header__contacts-title">Contacts:</h2>
+            <address class="header__contacts">
+                <ul class="header__contacts-list">
+                    <li class="header__cotntacts-item">
+                        <img class="header__contacts-img" src="img/email.svg" alt="email">
+                        <a href="mailto:badyukov1806302003@gamil.com" class="header__contacts-link">badyukov1806302003@gmail.com</a>
+                    </li>
+                    <li class="header__cotntacts-item">
+                        <img class="header__contacts-img" src="img/linkedin.svg" alt="linkedin">
+                        <a href="https://linkedin.com/in/igorbadyukov" class="header__contacts-link">Igor Badyukov</a>
+                    </li>
+                    <li class="header__cotntacts-item">
+                        <img class="header__contacts-img" src="img/git.svg" alt="git">
+                        <a href="https://github.com/IgorBadyukov" class="header__contacts-link">IgorBadyukov</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
+        <div class="header__image">
+            <img src="img/photo.jpg" alt="photo" class="header__photo">
+        </div>
+    </header>
+
+    <main class="main container">
+        <section class="main__section">
+            <div class="about-me">
+                <h2 class="title__about-me">About me</h2>
+                <p class="info__about-me">I am a beginner frontend developer. At the moment I live in Minsk and study at
+                    BSUIR
+                    (Belarusian State University of Informatics and Radioelectronics).
+                    I've been studying frontend for six months. In the summer I want to become internship
+                    at IT-company and I hope RS-School will help me with this)
+                </p>
+            </div>
+            <hr>
+            <div class="education">
+                <h2 class="title__education">Education</h2>
+                <p class="education__info">
+                    <ul class="education__list">
+
+                        <li class="education__item">
+                            2nd year of university 
+                            <span class="education__item-add">(knowledge OOP, algorithms, technical English)</span>
+                        </li>
+                        <li class="education__item">
+                            WayUp free course JavaScript
+                        </li>
+                        <li class="education__item">
+                            Stepik free course JavaScript
+                        </li>
+                        <li class="education__item">
+                            Itensiv GloAcademy <span class="education__item-add">(several pet-project)</span>
+                        </li>
+                    </ul>
+            </div>
+            <hr>
+            <div class="code">
+                <h2 class="code__title">Code</h2>
+                <p class="code__desciption">
+                    You are given a string containing a sequence of character sequences separated by commas.<br>
+
+                    Write a function which returns a new string containing the same character sequences except the first
+                    and the last ones but this time separated by spaces.<br> <br>
+
+                    If the input string is empty or the removal of the first and last items would cause the resulting
+                    string to be empty, return an empty value (represented as a generic value NULL in the examples
+                    below).You are given a string containing a sequence of character sequences separated by commas.<br>
+                    <br>
+                </p>
+                <div class="code__solve">
+            
+<pre class="code__text">
+function array(arr) { 
+    let newArr = arr.split(',');
+    if (newArr.length &lt; 3) {
+        return null;
+    }
+    let str = newArr.slice(1,-1).join(' ');
+    return str;
+}
+</pre>
+                </div>
+            </div>
+        </section>
+
+        <aside class="article">
+            <div class="skills">
+                <h2 class="title__skills">Skills</h2>
+                <div class="skills__type">
+                    <span class="skills__type-name">Hard</span>
+                    <p class="skills__description"> HTML5 - CSS3/SASS - JavaScript(Fundamentals, DOM, JSON, Jquery) -
+                        Git - Figma - C++/C
+                        -
+                        Pluggins: Swiper.js, Parallax.js
+                    </p>
+                </div>
+                <div class="skills__type">
+                    <span class="skills__type-name">Soft</span>
+                    <p class="skills__description">
+                        Communicabilty - Creativity - Flexibility - Discipline - Time-managment - Hard working
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="language">
+                <h2 class="language__title">Language</h2>
+                <ul class="language__list">
+                    <li class="language__item">Russian/Belarusian (Native)</li>
+                    <li class="language__item">English (A2-B2)</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="projects">
+                <h2 class="projects__title">Projects</h2>
+                <ul class="projects__list">
+                    <li class="projects__item">
+                        <div class="projet__item-link">
+                            <a href="https://igorbadyukov.github.io/The-Witcher/" class="project__link">The Withcer</a>
+                            <img src="img/link.svg" alt="project__link" class="project__img-link">
+                        </div>
+                        <span class="project__decription">HTML/CSS, JavaScript, Module, Adaptive layout, Grid, Tabs, JSON</span>
+                    </li>
+                    <li class="projects__item">
+                        <div class="projet__item-link">
+                            <a href="https://igorbadyukov.github.io/Cinema_Infinity-War/" class="project__link">The Cinema
+                                Infinity War</a>
+                            <img src="img/link.svg" alt="project__link" class="project__img-link">
+                        </div>
+                        <span class="project__decription">HTML/CSS, JavaScript, Adaptive layout, FlexBox</span>
+                    </li>
+                    <li class="projects__item">
+                        <div class="projet__item-link">
+                            <a href="https://igorbadyukov.github.io/Index.Eda/" class="project__link">Index Eda</a>
+                            <img src="img/link.svg" alt="project__link" class="project__img-link">
+                        </div>
+                        <span class="project__decription">HTML/CSS, Adaptive layout, Swiper.js</span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <a href="https://rs.school" class="rsschool__link">
+                <img src="img/rss.png" alt="rss" class="rsschool__image">
+            </a>
+            <span class="year">2021 RS-School</span>
+            <a href="https://github.com/IgorBadyukov" class="footer__git">
+                <img src="img/git__footer.png" alt="git__footer">
+                <span class="footer__git-name">IgorBadyukov</span>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

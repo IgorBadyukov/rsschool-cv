@@ -1,3 +1,4 @@
 # rsschool-cv
 
-https://igorbadyukov.github.io/rsschool-cv/cv
+https://igorbadyukov.github.io/rsschool-cv/
+
