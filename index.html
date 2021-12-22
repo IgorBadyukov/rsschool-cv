@@ -93,7 +93,7 @@
 <pre class="code__text">
 function array(arr) { 
     let newArr = arr.split(',');
-    if (newArr.length &lt 3) {
+    if (newArr.length &lt; 3) {
         return null;
     }
     let str = newArr.slice(1,-1).join(' ');
